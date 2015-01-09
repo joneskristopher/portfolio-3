@@ -4,14 +4,20 @@ $("document").ready(function(){
     $('p:first').css({"background-color": "green", "color": "white"});
     $('p:last').css({"background-color": "red", "color": "black"});
     $('#khazix').bind('click', alertButtonClick);
-    $('#textbox1').bind('blur', onBlurEvent)
-                  .bind('focus', onFocusEvent)
-                  .bind('onmousedown', onMDownEvent)
-                  .bind('onmouseup', onMUpEvent)
-                  .bind('change', onChangeEvent);
+    $('#replaceWHtml').bind('click', replaceWHtml);
+    $('#replaceWText').bind('click', replaceWText);
+    $('#addAPara').bind('click', addAPara);
+    $('#removeAPara').bind('click' removeAPara);
 });
 
 function alertButtonClick() {
-    alert("there was a button clicked");
+    alert("why would you click that button");
 }
 
+function replaceWHtml() {
+    $('h3Tag').html('<h6>Now i\'m an h6<h6>')
+}
+
+function replaceWText() {
+    $('h3Tag').text('<h6>Now i\'m an h6<h6>')
+}
