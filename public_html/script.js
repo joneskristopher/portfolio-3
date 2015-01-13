@@ -11,7 +11,9 @@ $("document").ready(function(){
     $('#lastIsFirst').bind('click', lastIsFirst);
     $('#addBefore').bind('click', addBefore);
     $('#addAfter').bind('click', addAfter);
-    $('#addToTxetBox').bind('click', addToTxetBox);
+    $('#addToTxetBox').bind('click', addToTextBox);
+    $('#hideLogo').bind('click', hideTheImage);
+    $('#showLogo').bind('click', showTheImage);
 });
 
 function alertButtonClick() {
@@ -27,7 +29,7 @@ function replaceWText() {
 }
 
 function addAPara() {
-    $('#randPara').append('<p>another paragraph</p>');
+    $('#randPara').append('<p>i said not to click the red now</p>');
 }
 
 function removeAPara() {
@@ -48,4 +50,12 @@ function addAfter() {
 
 function addToTextBox() {
     $('#randText').val('Random text');
+}
+
+function hideTheImage() {
+    $('#Logo').hide('puff', {}, 2500);
+}
+
+function showTheImage() {
+    $('#Logo').show('puff', {}, 2500);
 }
