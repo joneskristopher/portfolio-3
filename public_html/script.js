@@ -14,10 +14,14 @@ $("document").ready(function(){
     $('#addToTxetBox').bind('click', addToTextBox);
     $('#hideLogo').bind('click', hideTheImage);
     $('#showLogo').bind('click', showTheImage);
+    $('#dubstep > p').hide();
+    $('#dubstep').click(function(){
+        $(this).siblings('')
+    });
 });
 
 function alertButtonClick() {
-    alert("why would you click that button");
+    alert("aaaaaaaaaaaaaaaaaaand khazix has escaped");
 }
 
 function replaceWHtml() {
