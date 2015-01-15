@@ -2,7 +2,7 @@ $("document").ready(function(){
     $(".test").css("background-color", "grey");
     $('a').css({"background-color": "black", "color": "white"});
     $('p:first').css({"background-color": "green", "color": "white"});
-    $('p:last').css({"background-color": "red", "color": "black"});
+    $('p:nth-child(3)').css({"background-color": "red", "color": "black"});
     $('#khazix').bind('click', alertButtonClick);
     $('#replaceWHtml').bind('click', replaceWHtml);
     $('#replaceWText').bind('click', replaceWText);
@@ -14,10 +14,7 @@ $("document").ready(function(){
     $('#addToTxetBox').bind('click', addToTextBox);
     $('#hideLogo').bind('click', hideTheImage);
     $('#showLogo').bind('click', showTheImage);
-    $('#dubstep > p').hide();
-    $('#dubstep').click(function(){
-        $(this).siblings('')
-    });
+    $('#dubstep').accordion({header: "h3"});
 });
 
 function alertButtonClick() {
