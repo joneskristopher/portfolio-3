@@ -18,7 +18,7 @@ $("document").ready(function(){
 });
 
 function alertButtonClick() {
-    alert("aaaaaaaaaaaaaaaaaaand khazix has escaped");
+    alert("this button has been pushed");
 }
 
 function replaceWHtml() {
