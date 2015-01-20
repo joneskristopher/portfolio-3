@@ -17,6 +17,7 @@ $("document").ready(function(){
     $('#dubstep').accordion({header: "h3"});
 });
 
+//if a button with this function is click a alert will show
 function alertButtonClick() {
     alert("this button has been pushed");
 }
@@ -29,10 +30,12 @@ function replaceWText() {
     $('h3Tag').text('<h6>Now i\'m an h6<h6>');
 }
 
+//this adds a paragraph whenever a line of code with this function is click
 function addAPara() {
     $('#randPara').append('<p>i said not to click the red now</p>');
 }
 
+//this removes the paragraph that was made with the function above
 function removeAPara() {
     $('#randPara p:last').remove();
 }
@@ -53,10 +56,12 @@ function addToTextBox() {
     $('#randText').val('Random text');
 }
 
+//this hides whatever is under the code with this function on it
 function hideTheImage() {
     $('#Logo').hide('puff', {}, 2500);
 }
 
+//this brings back what has been hidden by the last function
 function showTheImage() {
     $('#Logo').show('puff', {}, 2500);
 }
