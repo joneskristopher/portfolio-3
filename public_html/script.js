@@ -1,4 +1,8 @@
+// these are all the functions that are in this project
 $("document").ready(function(){
+    $(".one").css("background-color", "blue");
+    $(".two").css("background-color", "yellow");
+    $(".three").css("background-color", "red");
     $(".test").css("background-color", "grey");
     $('a').css({"background-color": "black", "color": "white"});
     $('p:first').css({"background-color": "green", "color": "white"});
